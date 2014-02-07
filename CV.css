@@ -1,0 +1,110 @@
+html,body {
+    width:100%;
+    padding:0;
+    margin:0;
+    background:#E9E9E9;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+div#main {
+    padding:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#header {
+    margin:0;
+    background:#A1CF64;
+
+}
+
+.menu.mainmenu {
+}
+
+.emptyspace {
+    height:42px;
+    width:100%;
+}
+
+div#footer {
+}
+
+
+.equal.height.row {
+}
+
+@media all and (max-width: 1024px) {
+
+    div#main {
+        width:100%;
+        max-width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+.descriptionbox {
+   background-color:#F0F0FF;
+    padding-top:10px;
+}
+
+.segment.description {
+    font-size:1em !important;
+    padding-bottom:15px !important;
+    min-height:100%!important;
+    box-sizing:content-box!important;
+    
+}
+
+.contenttab {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+    margin-bottom:30px !important;
+    color: #555555;
+    font-size:1em;
+}
+
+.ui.ribbon.label.headline {
+    width:200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+
+.project {
+    width:100%;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.limiter {
+    max-width:1024px !important;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.ui.two.column.stackable.grid {
+    margin:0%;
+}
+
+.imageContainer {
+    width:auto !important;
+}
+
+.imageContainer img{
+    align-self:center;
+    width:100% !important;
+    height: auto !important;
+    max-width:100%;
+}
+
+.headlinegroup {
+    width:100%;
+}
+
+.site.menu {
+    margin-left:auto;
+    margin-right:auto;
+}
