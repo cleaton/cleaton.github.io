@@ -13,6 +13,7 @@
   <script type="text/javascript" src="html5shiv.min.js"></script>
   <script type="text/javascript" src="es5-shim.min.js"></script>
   <script type="text/javascript" src="es5-sham.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <![endif]-->
   <script>
   (function () {
@@ -20,18 +21,13 @@
       eventSupport = ('querySelector' in document && 'addEventListener' in window)
       jsonSupport  = (typeof JSON !== 'undefined'),
       jQuery       = (eventSupport && jsonSupport)
-        ? 'jquery.min.js'
-        : 'jquery.legacy.min.js'
+        ? 'http://code.jquery.com/jquery-2.1.0.min.js'
+        : 'http://code.jquery.com/jquery-1.11.0.min.js'
     ;
     document.write('<script type="text/javascript" src="' + jQuery + '"><\/script>');
-    if(jQuery == 'jquery.min.js') {
-        document.write('<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"><\/script>');
-    } else {
-    document.write('<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"><\/script>');
-    }
   }());
   </script>
-
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
 <script type="text/javascript" src="packaged/javascript/semantic.js"></script>
 <script type="text/javascript" src="http://fb.me/react-with-addons-0.8.0.js"></script>
 <script type="text/javascript" src="projects.json"></script>
