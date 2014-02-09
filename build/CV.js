@@ -89,21 +89,16 @@ var Project = React.createClass({displayName: 'Project',
 //consol.log(json)
 
 
-function showPortfolio() {
+function loadPortfolio() {
     React.renderComponent(
   HeadlineList( {data:data}),
   document.getElementById('left'));
 };
-
-
 
 $(document)
   .ready(function() {
 
     $('.site.menu .item')
       .tab();
-        React.renderComponent(
-  HeadlineList( {data:data}),
-  document.getElementById('left'));
-  })
-;
+      loadPortfolio();
+  });
