@@ -23,14 +23,19 @@
         ? 'jquery.min.js'
         : 'jquery.legacy.min.js'
     ;
-    document.write('<script src="' + jQuery + '"><\/script>');
+    document.write('<script type="text/javascript" src="' + jQuery + '"><\/script>');
+    if(jQuery == 'jquery.min.js') {
+        document.write('<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"><\/script>');
+    } else {
+    document.write('<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"><\/script>');
+    }
   }());
   </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
-<script src="packaged/javascript/semantic.js"></script>
-<script src="http://fb.me/react-with-addons-0.8.0.js"></script>
-<script src="projects.json"></script>
-<script src="build/CV.js"></script>
+
+<script type="text/javascript" src="packaged/javascript/semantic.js"></script>
+<script type="text/javascript" src="http://fb.me/react-with-addons-0.8.0.js"></script>
+<script type="text/javascript" src="projects.json"></script>
+<script type="text/javascript" src="build/CV.js"></script>
     
 
 </head>
