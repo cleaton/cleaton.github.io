@@ -27,7 +27,9 @@ var HeadlineList = React.createClass({
           <div className="limiter">
             <div className="ui ribbon purple huge inverted label headline"> {data.headline}</div>
                   </div>  
+          <div className="ui vertically divided grid">
           <ProjectList data={data.projects} />
+          </div>
 
           </div>
         );
@@ -44,7 +46,7 @@ var HeadlineList = React.createClass({
 });
 
 
-
+//<div className={(this.props.key != 0) ? 'ui divider' : ''}></div>
 
 
 var Project = React.createClass({
@@ -52,20 +54,22 @@ var Project = React.createClass({
     return (
         <div className="project">
             <div className="limiter">
-                <div className={(this.props.key != 0) ? 'ui divider' : ''}></div>
-                <div className="ui two column stackable grid">
-                    <div className="equal height row">
-                        <div className="column">
-                            <div className="center aligned row imageContainer">
-                            <h4 className="ui block header">
-                                {this.props.name}
-                            </h4>
-                            <img className="rounded ui large image" src={this.props.imgurl} />
+                
+                    <div className="row">
+        <div className="ui stackable grid">
+                        <h2 className="ui dividing header projectheader">
+                     {this.props.name}
+                    </h2>
+                        <div className="six wide column">
+                            <div className="ui basic segment">
+                            <img className="rounded ui image" src={this.props.imgurl} />
                             </div>
                                 </div>
-                        <div className="column descriptionbox">
-                            <div className="ui basic segment description" >
-                                <p><b>technologies : </b> {this.props.technologies}</p>
+                        <div className="ten wide column descriptionbox">
+                            <div className="ui segment description" >
+                                <h5 className="ui dividing header">Technologies</h5>
+                                <p>{this.props.technologies}</p>
+                                <h5 className="ui dividing header">Description</h5>
                                 <p>{this.props.description}</p>
                             </div>
                         </div>

@@ -27,7 +27,9 @@ var HeadlineList = React.createClass({displayName: 'HeadlineList',
           React.DOM.div( {className:"limiter"}, 
             React.DOM.div( {className:"ui ribbon purple huge inverted label headline"},  data.headline)
                   ),  
+          React.DOM.div( {className:"ui vertically divided grid"}, 
           ProjectList( {data:data.projects} )
+          )
 
           )
         );
@@ -44,7 +46,7 @@ var HeadlineList = React.createClass({displayName: 'HeadlineList',
 });
 
 
-
+//<div className={(this.props.key != 0) ? 'ui divider' : ''}></div>
 
 
 var Project = React.createClass({displayName: 'Project',
@@ -52,20 +54,22 @@ var Project = React.createClass({displayName: 'Project',
     return (
         React.DOM.div( {className:"project"}, 
             React.DOM.div( {className:"limiter"}, 
-                React.DOM.div( {className:(this.props.key != 0) ? 'ui divider' : ''}),
-                React.DOM.div( {className:"ui two column stackable grid"}, 
-                    React.DOM.div( {className:"equal height row"}, 
-                        React.DOM.div( {className:"column"}, 
-                            React.DOM.div( {className:"center aligned row imageContainer"}, 
-                            React.DOM.h4( {className:"ui block header"}, 
-                                this.props.name
-                            ),
-                            React.DOM.img( {className:"rounded ui large image", src:this.props.imgurl} )
+                
+                    React.DOM.div( {className:"row"}, 
+        React.DOM.div( {className:"ui stackable grid"}, 
+                        React.DOM.h2( {className:"ui dividing header projectheader"}, 
+                     this.props.name
+                    ),
+                        React.DOM.div( {className:"six wide column"}, 
+                            React.DOM.div( {className:"ui basic segment"}, 
+                            React.DOM.img( {className:"rounded ui image", src:this.props.imgurl} )
                             )
                                 ),
-                        React.DOM.div( {className:"column descriptionbox"}, 
-                            React.DOM.div( {className:"ui basic segment description"} , 
-                                React.DOM.p(null, React.DOM.b(null, "technologies : " ), this.props.technologies),
+                        React.DOM.div( {className:"ten wide column descriptionbox"}, 
+                            React.DOM.div( {className:"ui segment description"} , 
+                                React.DOM.h5( {className:"ui dividing header"}, "Technologies"),
+                                React.DOM.p(null, this.props.technologies),
+                                React.DOM.h5( {className:"ui dividing header"}, "Description"),
                                 React.DOM.p(null, this.props.description)
                             )
                         )

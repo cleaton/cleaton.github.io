@@ -45,8 +45,25 @@ div#footer {
 }
 
 .descriptionbox {
-   background-color:#F0F0FF;
-    padding-top:10px;
+}
+.resume p {
+    font-size:0.8em;
+    margin:0.4em;
+    padding: 0;
+}
+
+.expheader {
+    padding:0.3em !important;
+}
+
+.textlist {
+    font-size: 0.8em !important;
+}
+
+.headertext {
+    padding:0 !important;
+    margin: 0 !important;
+    font-size: 0.8em !important;
 }
 
 .segment.description {
@@ -68,7 +85,7 @@ div#footer {
 .ui.ribbon.label.headline {
     width:200px;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom:10px;
     margin-top:10px;
 }
@@ -87,6 +104,12 @@ div#footer {
 
 .ui.two.column.stackable.grid {
     margin:0%;
+}
+
+.projectheader {
+}
+
+.projectrow {
 }
 
 .imageContainer {

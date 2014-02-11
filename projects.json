@@ -2,21 +2,34 @@ data = [
   {headline: "Games", 
   projects: 
   	[{name: "Friday", 
-  		technologies: "test new thisng small word in long list", 
-  		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, posuere at tempor fringilla, eleifend a nunc. Maecenas nec nisi elementum, iaculis nisl id, mattis sem. Nulla facilisi. Phasellus semper varius pharetra. Proin lobortis sit amet eros pulvinar porta. In id gravida nulla. Fusce sagittis nisi dui, sed ultricies orci pretium eu. Morbi faucibus dignissim pharetra. Quisque pretium blandit.",
+  		technologies: "Python, Panda 3D game engine, Git, Bullet physics simulation", 
+  		description: "Developed a complete 3D platform game, choosing the initial ideas, planning the development procedure, working out the coding and implementation, designing level progression and administer the user tests.",
   		imgurl: "test.png"},
-  	{name: "Why not quiz", 
-  		technologies: "test new thisng small word in long list", 
-  		description: "this is a small description about the project",
-  		imgurl: "test.png"}]},
-  {headline: "projects", 
+  	{name: "Why Not Quiz", 
+  		technologies: "Python, Django framework, Django cache framework, Ajax, jQuery, Javascript, Git, Django social Auth Facebook login", 
+  		description: "I have completed a multiplayer web question-answer game based around an Ajax chat. Users can create and invite friends to a chat room where they can compete by being the first one to answer the automatically generated questions from the server. The game is database free by design and instead uses in memory cache to store game session between http requests. When new questions are needed the server uses movie facts from The Movie DB API to generate new questions in real-time. I configured and tested the game in production environment by deploying using uWSGI application server.",
+  		imgurl: "test.png"},
+    {name: "Bunny Island", 
+  		technologies: "C, OpenGL, glew and glut, 3D programming, shader programming (GLSL), Git", 
+  		description: "I Built a 3D OpenGL first person shooter game, including physics simulation, collisions, game logic, input handling and rendering code. This includes updating camera matrix, handling coordinate space transformations, and implement lights and phong reflections in the GLSL.",
+  		imgurl: "test.png"},
+    {name: "Deep Space", 
+  		technologies: "C++, SDL, OpenGL, glew, Git, Box2D physics, shader programming, Emscripten cross compiling", 
+  		description: "I Developed a 2D space puzzle game where a player has to find a way to pass some patrolling enemy space ship in order to get to a goal. For graphics, I used pure OpenGL to render a 2D world and Box2D to simulate physics and collisions. I designed the game to be Emscripten cross compiler compatible, which makes it possible to run the game in a web browser.",
+  		imgurl: "test.png"},
+    {name: "Drop Box Dance", 
+  		technologies: "C#, Kinect for Windows SDK, Visual Studio, Git", 
+  		description: "I Produced a PC game that uses Kinect motion camera as input method. A player can see themselves represented as a 2D skeleton on a screen and have to move in order to watch out for dangerous objects. As a part of this project, I also had to design a way for users to interact with a menu system using body controls, design game logic and write code to check physics collision.",
+  		imgurl: "test.png"},]},
+  
+
+
+
+
+{headline: "projects", 
   	projects: 
-  	[{name: "Friday", 
-  		technologies: "test new thisng small word in long list", 
-  		description: "this is a small description about the project",
-  		imgurl: "test.png"},
-  	{name: "Why not quiz", 
-  		technologies: "test new thisng small word in long list", 
-  		description: "this is a small description about the project",
+  	[{name: "100,000 Integers Sorting", 
+  		technologies: "Multicore programming, C, threads, bucket sort, quick sort, insertion sort", 
+  		description: "Implemented a multicore aware integer sorter designed to minimize the time to sort large amount of integers. It uses bucket sort splitting up an array of integers into buckets for threads to work on using an optimized quicksort, as the array is almost sorted it switches to insertion sort.",
   		imgurl: "test.png"}]}
 ]
