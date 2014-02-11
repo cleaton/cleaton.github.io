@@ -107,6 +107,7 @@ div#footer {
 }
 
 .projectheader {
+    padding-left: 0.3em !important;
 }
 
 .projectrow {
