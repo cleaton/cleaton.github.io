@@ -47,7 +47,7 @@ div#footer {
 .descriptionbox {
 }
 .resume p {
-    font-size:0.8em;
+    font-size:0.9em;
     margin:0.4em;
     padding: 0;
 }
@@ -57,13 +57,13 @@ div#footer {
 }
 
 .textlist {
-    font-size: 0.8em !important;
+    font-size: 0.9em !important;
 }
 
 .headertext {
     padding:0 !important;
     margin: 0 !important;
-    font-size: 0.8em !important;
+    font-size: 0.9 !important;
 }
 
 .segment.description {
@@ -90,6 +90,19 @@ div#footer {
     margin-top:10px;
 }
 
+.contact p {
+    font-size: 0.8em;
+    margin:0.2em;
+}
+.contact {
+    padding-top:0.1em!important;
+    padding-bottom:0.1em!important;
+}
+
+.intro p {
+    font-size: 1 em;
+}
+
 
 .project {
     width:100%;
@@ -97,7 +110,13 @@ div#footer {
     margin-top:20px;
 }
 .limiter {
-    max-width:1024px !important;
+    max-width:1150px !important;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.cllimiter {
+    max-width:768px !important;
     margin-left:auto;
     margin-right:auto;
 }
@@ -132,3 +151,44 @@ div#footer {
     margin-left:auto;
     margin-right:auto;
 }
+h5.black.block.header {
+
+}
+p.independent {
+    padding-top:2em;
+    padding-bottom:3em;
+}
+
+p.cladressline {
+    font-size: 0.8em;
+}
+
+p.name {
+    padding-top:1em;
+    padding-bottom:4em;
+}
+.coverletter {
+}
+
+.technologies {
+    font-weight: bold;
+    font-style: normal !important;
+    font-size:0.75em !important;
+    padding-left:2em;
+    padding-top:0.3em;
+}
+.descriptionbox a {
+    color:#009FDA;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+.listrow {
+    margin-top :0 !important
+}
+
+.descriptionbox a:link    {}
+.descriptionbox a:visited {}
+.descriptionbox a:hover   {color:#00BAFF;}
+.descriptionbox a:active  {}

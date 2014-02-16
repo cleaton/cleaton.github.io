@@ -6,7 +6,7 @@ var ProjectList = React.createClass({displayName: 'ProjectList',
     render: function () {
     
         var projectNodes = this.props.data.map(function (project, i) {
-            return Project( {key:i, imgurl:project.imgurl, name:project.name, technologies:project.technologies, description:project.description});
+            return Project( {key:i, imgurl:project.imgurl, name:project.name, technologies:project.technologies, description:project.description, link:project.link, linktxt:project.linktxt});
     });
 
     return (
@@ -71,7 +71,8 @@ var Project = React.createClass({displayName: 'Project',
                                 React.DOM.h5( {className:"ui dividing header"}, "Technologies"),
                                 React.DOM.p(null, this.props.technologies),
                                 React.DOM.h5( {className:"ui dividing header"}, "Description"),
-                                React.DOM.p(null, this.props.description)
+                                React.DOM.p(null, this.props.description),
+                                React.DOM.a( {classname:(this.props.link != "") ? '' : 'link', href:this.props.link, target:"_blank"}, this.props.linktxt)
                             )
                         )
                     )

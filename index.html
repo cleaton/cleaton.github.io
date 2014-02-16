@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>Title of the document</title>
+<title>Jesper's page</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Questrial|Noto+Sans|Cabin|Playfair+Display|Cabin+Condensed|Old+Standard+TT|Inconsolata|Raleway|Nunito|Vollkorn' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="CV.css">
 <link rel="stylesheet" type="text/css" href="packaged/css/semantic.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -15,7 +14,7 @@
   <script type="text/javascript" src="es5-sham.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <![endif]-->
-  <script>
+  <script type="text/javascript">
   (function () {
     var
       eventSupport = ('querySelector' in document && 'addEventListener' in window)
@@ -29,7 +28,7 @@
   </script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
 <script type="text/javascript" src="packaged/javascript/semantic.js"></script>
-<script type="text/javascript" src="http://fb.me/react-with-addons-0.8.0.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react-with-addons.min.js"></script>
 <script type="text/javascript" src="projects.json"></script>
 <script type="text/javascript" src="build/CV.js"></script>
     
@@ -51,39 +50,51 @@
             <a class="item" id="portfolio" data-tab="portfolio">
                 Portfolio
             </a>
+            <a class="item" id="coverletter" data-tab="coverletter">
+                Cover Letter
+            </a>
         
          </div>
     </div>
     <div class="emptyspace"></div>
         <div class="ui tab basic segment contenttab" data-tab="home">
 <div id="homecontent">
-<div class="ui page grid stackable">
-    <div class="row">
-      <div class="column">
-        <h1 class="center aligned ui header">
-          
-        </h1>
-      </div>
-    </div>
+<div class="">
+
     
     <div class="limiter">
-        <div class="ui grid stackable">
-      <div class="five wide column">
-        
-                <div class="row">
-                
+                                <div class="row">
+
                 </div>
-          <div class="ui center aligned segment">
+        <div class="ui grid stackable">
+            
+      <div class="five wide column">
+
+
+          <div class="ui segment">
+              <h2 class="ui dividing header">Jesper Lundgren</h2>
+          <div class="ui center aligned basic segment">
                 <img class="image"  src="Jesper_180.JPG">
-                <h3 class="ui header">Jesper Lundgren</h3>
+              </div>
                 
-                <p>This dog has some things going for it. Its pretty cute and looks like it'd be fun to cuddle up with.</p>
+                                                  <div class="contact">
+                                                      
+                <div class="row"><p><b>Mobile</b>: 0975-75-3601</p></div>
+                <div class="row"><p><b>Email</b>: koudelkaa@gmail.com</p></div>
+                <div class="row"><p><b>Address</b>: 7F-2, No. 10 Minquan Road, Hsinchu City 300, Taiwan</p></div>
+            </div>
+               
+
+            <div class="intro">
+                <p>I am a passionate Swedish software engineer with a major/minor in Computer Science/algorithms, including AI and machine learning. Have done many independent projects in various languages and frameworks. Good at communicating and working with people as a team. Have a long-term commitment to develop my career in Taiwan.</p>
+                </div>
   </div>
       </div>
       <div class="eleven wide column">
           
         <div class="ui segment resume">
-        <h2 class="ui header">Resume</h2>
+        <h2 class="ui dividing header">Resume</h2>
+            
         <h3 class="ui dividing header">Education</h3>
             <div class="ui grid">
                 <div class="equal height row">
@@ -121,6 +132,8 @@
                     </div>
                 </div>
             </div>
+
+            <h3 class="ui dividing header">Extracurricular Activities</h3>
             <div class="ui grid">
                 <div class="equal height row">
                     <div class="four wide column">
@@ -139,6 +152,16 @@
                     </div>
                     <div class="twelve wide column">
                         <p><b>Nordic Collegiate Programming Contest 2013, 2012, 2009</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui grid">
+                <div class="equal height row">
+                    <div class="four wide column">
+                        <p><b>2008~2013</b></p>
+                    </div>
+                    <div class="twelve wide column">
+                        <p><b>ESN: Peer Student for International Students</b></p>
                     </div>
                 </div>
             </div>
@@ -187,27 +210,24 @@
                 </div>
             </div>
 
-        <h3 class="ui dividing header">Experience</h3>
+        <h3 class="ui dividing header">Projects</h3>
         <div class="ui grid">
             <div class="row">
                 <h5 class="ui black block header">
                     <div class="ui grid">
                         <div class="equal height row">
-                            <div class="twelve wide column">
-                                <h5 class="headertext">Lab Assistant, Linköping University</h5>
-                            </div>
-                            <div class="four wide column">
-                               <h5 class="headertext">Mar. 2013 – Jun. 2013</h5>
+                            <div class="column">
+                                <h5 class="headertext">"Friday"</h5>
+                                <div class="technologies">Technologies: Python, Panda 3D game engine, Git, Bullet physics simulation</div>
                             </div>
                         </div>
                     </div>
                 </h5>
             </div>
-            <div class="row">
+            <div class="row listrow">
                 <div class="column">
                     <ul class="ui list textlist">
-                      <li>Worked one semester as a lab assistant for a course in advanced web programming.</li>
-                      <li>Used my ability to learn new environments fast in order to help debug student web projects using various language and frameworks as the students could choose themselves.</li>
+                      <li>I have designed and developed a 3D platform game in Python in conjunction with Panda 3D game engine. Extra care and attention have been put into the initial game ideas, game mechanics, and level design. I also developed a customized menu system to give the game a unified feeling in both visual and sound design. This game has won first place at LiU Game Awards (Game design competition) in 2012.</li>
                     </ul>
                 </div>
             </div>
@@ -215,22 +235,81 @@
                 <h5 class="ui black block header">
                     <div class="ui grid">
                         <div class="equal height row">
-                            <div class="twelve wide column">
-                                <h5 class="headertext">PBL Tutor, Linköping University</h5>
-                            </div>
-                            <div class="four wide column">
-                               <h5 class="headertext">Sep. 2010 – Dec. 2010, Sep 2011 – Dec 2011</h5>
+                            <div class="column">
+                                <h5 class="headertext">"Android ROM development"</h5>
+                                <div class="technologies">Technologies: C, C++, Java, Android build environment, Git</div>
                             </div>
                         </div>
                     </div>
                 </h5>
             </div>
-            <div class="row">
+            <div class="row listrow">
                 <div class="column">
                     <ul class="ui list textlist">
-                      <li>Worked two semesters as PBL tutor for IT students at Linköping University.</li>
-                      <li>Observed and guided a group in a structured way in order to solve problems/tasks together.</li>
-                      <li>Used my experience with group psychology and conflict management to resolve internal issues.</li>
+                      <li>I have released multiple custom Android ROMs for both the Acer Liquid A1 phone and Galaxy S2. I have also released ROMs built from source (Cyanogenmod and AOSP) and also done MIUI ports. I provided a minimalistic AOSP ROM, signed with release keys (vs. most other custom ROMs use the public AOSP dev keys). I actively shared my knowledge with other Android developers and helped debugging.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="ui black block header">
+                    <div class="ui grid">
+                        <div class="equal height row">
+                            <div class="column">
+                                <h5 class="headertext">"100,000 Integers Sorting"</h5>
+                                <div class="technologies">Technologies: Multicore programming, C, Threads, Bucket Sort, Quick Sort, Insertion Sort</div>
+                            </div>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+            <div class="row listrow">
+                <div class="column">
+                    <ul class="ui list textlist">
+                      <li> Acted I have designed and implemented a multicore integer sort algorithm, designed to minimize the time to sort large amount of integers. It uses bucket sort, splitting up an array of integers into “buckets” where each bucket is sorted by a separate thread.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="ui dividing header">Experience</h3>
+        <div class="ui grid">
+            <div class="row">
+                <h5 class="ui black block header">
+                    <div class="ui grid">
+                        <div class="equal height row">
+                            <div class="column">
+                                <h5 class="headertext">Lab Assistant, Advanced Web Programming, Linköping University</h5>
+                                <div class="technologies">Mar. 2013 – Jun. 2013</div>
+                            </div>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+            <div class="row listrow">
+                <div class="column">
+                    <ul class="ui list textlist">
+                      <li>Reviewed students’ project specifications and gave comments and directions on their proposed technical solutions.</li>
+                      <li>Analyzed and debugged the projects, constructed with various languages and frameworks.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="ui black block header">
+                    <div class="ui grid">
+                        <div class="equal height row">
+                            <div class="column">
+                                <h5 class="headertext">PBL Tutor, Linköping University</h5>
+                                <div class="technologies">Sep. 2010 – Dec. 2010, Sep 2011 – Dec 2011</div>
+                            </div>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+            <div class="row listrow">
+                <div class="column">
+                    <ul class="ui list textlist">
+                      <li>Provided structured guidance to work groups to improve their problem solving capabilities.</li>
+                      <li>Analyzed and interpreted group behavior in order to mediate potential conflicts.</li>
                     </ul>
                 </div>
             </div>
@@ -254,7 +333,46 @@
         <div class="ui active tab basic segment contenttab" data-tab="portfolio">
             <div id="left"></div>
         </div>
-        <div class="spacer" style="clear: both;"></div>
+    
+    
+    
+        <div class="ui active tab basic segment contenttab" data-tab="coverletter">
+            <div class="cllimiter">
+                <div class="row">
+
+                </div>
+                <div class="ui segment coverletter">
+                    <h2 class="ui dividing header">Jesper Lundgren</h2>
+                    <p class="cladressline">koudelkaa@gmail.com| 0975-75-3601| 7F-2, No. 10 Minquan Road, Hsinchu City 300, Taiwan</p>
+                    <div class="ui divider"></div>
+                    <p class="independent"><b>Hi manager,</b></p>
+                        <p>I am a passionate programmer with strong technology acumen. I have been a loyal reader and 
+follower of technology industry trends and news for more than eight years. You will find me to be a 
+passionate learner who consistently explorers the new topics in the high tech industry and 
+diligently strengthens my programming knowledge and abilities. 
+</p>
+                        <p>Moreover, you will find me to be a good team player in a dynamic environment since I have made 
+great efforts to study group behavior via PBL (problem-based learning) and to broaden my 
+international perspective by guiding and interacting with international students during my time at 
+the university. 
+</p>
+                        <p>I have long known that Taiwan is one of the most active and successful countries in engineering and 
+technology fields, and I do love the culture and environment here. Therefore, I am determined to 
+develop my long-term professional career in Taiwan and to become a part of the Taiwan tech 
+industry. I look forward to making contributions to your team and the continued success of your 
+company. 
+</p>
+                        <p>Thank you for your time. I am eager to meet with you and have a further discussion regarding your 
+needs and my qualification. 
+</p>
+                        <p class="independent"><b>Sincerely, 
+</b></p>
+                        <p class="independent name"><b>Jesper Lundgren</b></p>
+                </div>
+            </div>
+        </div>
+
+    
     <div id="footer">
     </div>
 
