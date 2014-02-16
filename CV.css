@@ -34,7 +34,7 @@ div#footer {
 .equal.height.row {
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1150px) {
 
     div#main {
         width:100%;
